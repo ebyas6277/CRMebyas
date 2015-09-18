@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>CRM</h1>
+    <p class="lead">Welcome to the Customer Relationship Management (CRM) Portal.</p>
+    <p>
+        <!--<a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a>-->
+        <a href="@Url.Action("About")" class="btn btn-primary btn-lg">Learn more &raquo;</a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            If you do not already have an account, please Register using the link below. Otherwise, Log in to view current customers.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Register", "Account")">Register &raquo;</a></p>
+    </div>
+</div>
